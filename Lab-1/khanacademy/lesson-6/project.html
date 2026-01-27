@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Project: Event invite</title>
+        <style>
+            body {
+                font-family: 'Georgia', serif;
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                margin: 0;
+                padding: 40px 20px;
+                min-height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .invite-card {
+                background: #ffffff;
+                max-width: 600px;
+                width: 100%;
+                border-radius: 20px;
+                box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+                overflow: hidden;
+            }
+            
+            .header {
+                background: linear-gradient(135deg, #a8e063 0%, #56ab2f 100%);
+                padding: 50px 30px;
+                text-align: center;
+                position: relative;
+            }
+            
+            .header::before {
+                content: "🌸 🌿 🌸";
+                position: absolute;
+                top: 15px;
+                left: 50%;
+                transform: translateX(-50%);
+                font-size: 24px;
+            }
+            
+            h1 {
+                color: white;
+                font-size: 42px;
+                margin: 0 0 10px 0;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            }
+            
+            .subtitle {
+                color: #f0f8f0;
+                font-size: 20px;
+                font-style: italic;
+                margin: 0;
+            }
+            
+            .content {
+                padding: 40px 30px;
+            }
+            
+            h2 {
+                color: #56ab2f;
+                font-size: 24px;
+                margin-top: 0;
+                margin-bottom: 25px;
+                text-align: center;
+            }
+            
+            .details {
+                list-style: none;
+                padding: 0;
+                margin: 0 0 30px 0;
+            }
+            
+            .details li {
+                padding: 15px 20px;
+                margin: 10px 0;
+                background: #f9fff9;
+                border-left: 4px solid #a8e063;
+                border-radius: 5px;
+                font-size: 16px;
+                line-height: 1.6;
+            }
+            
+            .details li strong {
+                color: #56ab2f;
+                display: inline-block;
+                min-width: 100px;
+            }
+            
+            .rsvp-section {
+                text-align: center;
+                margin: 40px 0 30px 0;
+            }
+            
+            .rsvp-button {
+                display: inline-block;
+                background: linear-gradient(135deg, #a8e063 0%, #56ab2f 100%);
+                color: white;
+                padding: 15px 50px;
+                text-decoration: none;
+                border-radius: 30px;
+                font-size: 18px;
+                font-weight: bold;
+                box-shadow: 0 5px 15px rgba(86, 171, 47, 0.4);
+                transition: transform 0.3s, box-shadow 0.3s;
+            }
+            
+            .rsvp-button:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 7px 20px rgba(86, 171, 47, 0.5);
+            }
+            
+            .guest-list {
+                margin-top: 40px;
+                padding-top: 30px;
+                border-top: 2px solid #e8f5e8;
+            }
+            
+            .guest-list h3 {
+                color: #56ab2f;
+                font-size: 20px;
+                margin-bottom: 15px;
+            }
+            
+            .guest-list ul {
+                list-style: none;
+                padding: 0;
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                gap: 10px;
+            }
+            
+            .guest-list li {
+                background: #f9fff9;
+                padding: 10px;
+                border-radius: 5px;
+                text-align: center;
+                font-size: 14px;
+            }
+            
+            .footer {
+                text-align: center;
+                color: #888;
+                font-size: 14px;
+                font-style: italic;
+                margin-top: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="invite-card">
+            <div class="header">
+                <h1>Summer Garden Party</h1>
+                <p class="subtitle">Celebrate the Season with Us!</p>
+            </div>
+            
+            <div class="content">
+                <h2>You're Invited!</h2>
+                
+                <ul class="details">
+                    <li>
+                        <strong>📅 Date:</strong> Saturday, June 27th, 2026
+                    </li>
+                    <li>
+                        <strong>🕐 Time:</strong> 4:00 PM - 9:00 PM
+                    </li>
+                    <li>
+                        <strong>📍 Location:</strong> The Green House Garden<br>
+                        <span style="margin-left: 100px;">123 Bloom Street, Garden City</span>
+                    </li>
+                    <li>
+                        <strong>👔 Dress Code:</strong> Garden Chic (sundresses, light colors, floral patterns welcome!)
+                    </li>
+                    <li>
+                        <strong>🎵 Activities:</strong> Live acoustic music, garden games, outdoor dining, and sunset cocktails
+                    </li>
+                    <li>
+                        <strong>🍽️ Menu:</strong> Farm-to-table dinner, signature cocktails, and homemade desserts
+                    </li>
+                </ul>
+                
+                <div class="rsvp-section">
+                    <a href="#" class="rsvp-button">RSVP by July 1st</a>
+                </div>
+                
+                <div class="guest-list">
+                    <h3>Guest List (Confirmed)</h3>
+                    <ul>
+                        <li>🌻 Emma & James</li>
+                        <li>🌻 Sophia & Oliver</li>
+                        <li>🌻 Isabella</li>
+                        <li>🌻 Mason & Ava</li>
+                        <li>🌻 Lucas</li>
+                        <li>🌻 Charlotte</li>
+                    </ul>
+                </div>
+                
+                <p class="footer">
+                    Can't wait to see you there! 🌿<br>
+                    Questions? Contact us at garden.party@email.com
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
